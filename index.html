@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Dog Survey</title>
+</head>
+<body class="bimg">
+    <form action="index.html" method="post">
+        <h1>Do you Love Dogs Survey</h1>
+
+        <fieldset>
+            <legend><span class="number">1</span>Who Are you?</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+
+            <label for="mail">Email:</label>
+            <input type="text" id="mail" name="user_email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="user_phone">
+
+            <label>Age:</label>
+            <input type="radio" name="user_age" id="under_13">
+            <label for="under_13" class="light">Under 13</label>
+            <input type="radio" id="over_13" name="user_age">
+            <label for="over_13" class="light">Over 13</label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend><span class="number">2</span>About Your Dogs</legend>
+
+            <label for="num_dogs">How many Fur babies do you have?</label>
+            <select name="num_dog" id="num_dogs">
+                <optgroup label="Number of Dogs?">
+                    <option value="0">none</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3+</option>
+                </optgroup>
+            </select>
+
+            <label for="size_of_the_dog">How big is your dog?</label>
+            <select name="size_of_dog" id="size_of_the_dog">
+                <optgroup label="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </optgroup>
+            </select> 
+            
+            <label for="more_info">Tell us more:</label>
+            <textarea name="dog_info" id="more_info"></textarea>
+        </fieldset>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+    </form>
+
+</body>
+</html>
